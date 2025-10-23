@@ -52,6 +52,10 @@ app.use('/live', (request, response) => {
   return response.sendStatus(200);
 });
 
+app.use('/hello', (request, response) => {
+  response.send('🚀 OpenShift Demo funcionando! Código atualizado com sucesso!');
+});
+
 db.init().then(() => {
   logger.info('Database init\'d');
 }).catch(error => {
