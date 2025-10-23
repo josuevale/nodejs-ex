@@ -53,7 +53,7 @@ app.use('/live', (request, response) => {
 });
 
 app.use('/hello', (request, response) => {
-  response.send('🚀 OpenShift Demo funcionando! Código atualizado com sucesso :-)!');
+  response.send('🚀 OpenShift Demo funcionando! Código atualizado com sucesso :-)2!');
 });
 
 db.init().then(() => {
